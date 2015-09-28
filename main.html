@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Browse - Fridge Fingers</title>
+<script src="javaScript/jquery.js"></script>
+<link rel="stylesheet" href="styleSheet/style.css">
+  <script src="javaScript/recipeList.js"></script>
+  
+</head>
+<body>
+<div class="header">
+	<div class="container">
+		<ul class="pull-left">
+			<li><a href="index.html">Fridge Fingers</a></li>
+		</ul>
+		<ul class="pull-right">
+			<li><a href="main.html">Browse</a></li>
+			<li><a href="help.html">Help</a></li>
+	</div>
+</div>
+<div class= "mainResult">
+	<div class="searchQry">
+			<input type="text" value="Search for recipes..." id="searchItem"><br>
+			<input type="text" value="Exclude recipes" id="excItem"><br>
+			<button onclick="searchBt()">Search</button>
+			
+			<form class="cuisineBox">
+			<h2>Cuisine</h2>
+			<input type="checkbox" name="cuisine" value="african"> African <br>
+			<input type="checkbox" name="cuisine" value="american"> American <br>
+			<input type="checkbox" name="cuisine" value="british"> British <br>
+			<input type="checkbox" name="cuisine" value="cajun"> Cajun <br>
+			<input type="checkbox" name="cuisine" value="caribbean"> Caribbean <br>
+			<input type="checkbox" name="cuisine" value="chinese"> Chinese <br>
+			<input type="checkbox" name="cuisine" value="eastern European"> Eastern European <br>
+			<input type="checkbox" name="cuisine" value="french"> French <br>
+			<input type="checkbox" name="cuisine" value="german"> German <br>
+			<input type="checkbox" name="cuisine" value="greek"> Greek <br>
+			<input type="checkbox" name="cuisine" value="indian"> Indian <br>
+			<input type="checkbox" name="cuisine" value="irish"> Irish <br>
+			<input type="checkbox" name="cuisine" value="italian"> Italian <br>
+			<input type="checkbox" name="cuisine" value="japanese"> Japanese <br>
+			<input type="checkbox" name="cuisine" value="jewish"> Jewish <br>
+			<input type="checkbox" name="cuisine" value="korean"> Korean <br>
+			<input type="checkbox" name="cuisine" value="latin American"> Latin American <br>
+			<input type="checkbox" name="cuisine" value="mexican"> Mexican <br>
+			<input type="checkbox" name="cuisine" value="middle Eastern"> Middle Eastern <br>
+			<input type="checkbox" name="cuisine" value="nordic"> Nordic <br>
+			<input type="checkbox" name="cuisine" value="southern"> Southern <br>
+			<input type="checkbox" name="cuisine" value="spanish"> Spanish <br>
+			<input type="checkbox" name="cuisine" value="thai"> Thai <br>
+			<input type="checkbox" name="cuisine" value="vietnamese"> Vietnamese <br>
+		</form>
+		
+		<form class="typeBox">
+			<h2>Type of recipe</h2>
+			<input type="radio" name="type" value="appetizer">Appetizer<br>
+			<input type="radio" name="type" value="beverage">Beverage<br>
+			<input type="radio" name="type" value="bread">Bread<br>
+			<input type="radio" name="type" value="breakfast">Breakfast<br>
+			<input type="radio" name="type" value="dessert">Dessert<br>
+			<input type="radio" name="type" value="drink">Drink<br>
+			<input type="radio" name="type" value="main course">Main course<br>
+			<input type="radio" name="type" value="salad">Salad<br>
+			<input type="radio" name="type" value="sauce">Sauce<br>
+			<input type="radio" name="type" value="side dish">Side dish<br>
+			<input type="radio" name="type" value="soup">Soup<br>
+		</form>
+		
+		<form class="dietBox">
+			<h2>Diet</h2>
+			<input type="radio" name="diet" value="Lacto Vegeterian">Lacto Vegeterian<br>
+			<input type="radio" name="diet" value="Ovo Vegeterian">Ovo Vegeterian<br>
+			<input type="radio" name="diet" value="Pescetarian">Pescetarian<br>
+			<input type="radio" name="diet" value="Vegan">Vegan<br>
+			<input type="radio" name="diet" value="Vegeterian">Vegeterian<br>
+		</form>
+		
+			<form class="allergyBox">
+			<h2>Allergy</h2>
+			<input type="checkbox" name="allergy" value="dairy">Dairy<br>
+			<input type="checkbox" name="allergy" value="egg">Egg<br>
+			<input type="checkbox" name="allergy" value="gluten">Gluten<br>
+			<input type="checkbox" name="allergy" value="peanut">Peanut<br>
+			<input type="checkbox" name="allergy" value="sesame">Sesame<br>
+			<input type="checkbox" name="allergy" value="seafood">Seafood<br>
+			<input type="checkbox" name="allergy" value="shellfish">Shellfish<br>
+			<input type="checkbox" name="allergy" value="soy">Soy<br>
+			<input type="checkbox" name="allergy" value="sulfite">Sulfite<br>
+			<input type="checkbox" name="allergy" value="treenut">Tree Nut<br>
+			<input type="checkbox" name="allergy" value="wheat">Wheat<br>
+		</form>
+		
+</div>
+	</div>
+	
+	<div id="freewall" class="free-wall">
+		<table width="40%">
+			<tr>
+				<th>
+				 <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('0')">
+				<div id="thmbDiv0"></div>
+					<div class="info">
+		            <h3 id="content0"></h3>
+					<h6 id="Id0"></h6>
+		        </div>
+				</a>
+				</div>
+			</th>
+				<th> <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('1')">
+		        <div id="thmbDiv1"></div>
+		        <div class="info">
+		            <h3 id="content1"></h3>
+					<h6 id="Id1"></h6>
+		        </div>
+				</a>
+		    </div></th>
+				<th><div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('2')">
+		       <div id="thmbDiv2"></div>
+		         <div class="info">
+		            <h3 id="content2"></h3>
+					<h6 id="Id2"></h6>
+		        </div>
+				</a>
+		    </div></th>
+				<th> <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('3')">
+					<div id="thmbDiv3"></div>
+					<div class="info">
+		            <h3 id="content3"></h3>
+					<h6 id="Id3"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			
+			</tr>
+			<tr>
+				<th> <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('4')">
+					<div id="thmbDiv4"></div>
+					<div class="info">
+		            <h3 id="content4"></h3>
+					<h6 id="Id4"></h6>
+		        </div>
+				</a>
+		    </div></th>
+				<th> <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('5')">
+		        <div id="thmbDiv5"></div>
+		        <div class="info">
+		            <h3 id="content5"></h3>
+					<h6 id="Id5"></h6>
+		        </div>
+				</a>
+		    </div></th>
+				<th><div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('6')">
+		       <div id="thmbDiv6"></div>
+		        <div class="info">
+		            <h3 id="content6"></h3>
+					<h6 id="Id6"></h6>
+		        </div>
+				</a>
+		    </div></th>
+				<th> <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('7')">
+		       <div id="thmbDiv7"></div>
+		        <div class="info">
+		            <h3 id="content7"></h3>
+					<h6 id="Id7"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			</tr>
+			<tr>
+				<th><div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('8')">
+		       <div id="thmbDiv8"></div>
+		        <div class="info">
+		            <h3 id="content8"></h3>
+					<h6 id="Id8"></h6>
+		        </div>
+				</a>
+		    </div></th>
+				<th>
+				  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('9')">
+		       <div id="thmbDiv9"></div>
+		        <div class="info">
+		            <h3 id="content9"></h3>
+					<h6 id="Id9"></h6>
+		        </div>
+				</a>
+		    </div></th>
+				<th>
+				  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('10')">
+		       <div id="thmbDiv10"></div>
+		        <div class="info">
+		            <h3 id="content10"></h3>
+					<h6 id="Id10"></h6>
+		        </div>
+				</a>
+		    </div></th>
+				<th>
+				  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('11')">
+		       <div id="thmbDiv11"></div>
+		        <div class="info">
+		            <h3 id="content11"></h3>
+					<h6 id="Id11"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			</tr>
+			<tr>
+				<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('12')">
+		       <div id="thmbDiv12"></div>
+		        <div class="info">
+		            <h3 id="content12"></h3>
+					<h6 id="Id12"></h6>
+		        </div>
+				</a>
+		    </div></th></th>
+				<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('13')">
+		       <div id="thmbDiv13"></div>
+		        <div class="info">
+		            <h3 id="content13"></h3>
+					<h6 id="Id13"></h6>
+		        </div>
+				</a>
+		    </div></th></th>
+				<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('14')">
+		       <div id="thmbDiv14"></div>
+		        <div class="info">
+		            <h3 id="content14"></h3>
+					<h6 id="Id14"></h6>
+		        </div>
+				</a>
+		    </div></th></th>
+				<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('15')">
+		       <div id="thmbDiv15"></div>
+		        <div class="info">
+		            <h3 id="content15"></h3>
+					<h6 id="Id15"></h6>
+		        </div>
+				</a>
+		    </div></th></th>
+			</tr>
+			<tr>
+				<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('16')">
+		       <div id="thmbDiv16"></div>
+		        <div class="info">
+		            <h3 id="content16"></h3>
+					<h6 id="Id16"></h6>
+		        </div>
+				</a>
+		    </div></th></th>
+				<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('17')">
+		       <div id="thmbDiv17"></div>
+		        <div class="info">
+		            <h3 id="content17"></h3>
+					<h6 id="Id17"></h6>
+		        </div>
+				</a>
+		    </div></th></th>
+				<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('18')">
+		       <div id="thmbDiv18"></div>
+		        <div class="info">
+		            <h3 id="content18"></h3>
+					<h6 id="Id18"></h6>
+		        </div>
+				</a>
+		    </div></th></th>
+				<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('19')">
+		       <div id="thmbDiv19"></div>
+		        <div class="info">
+		            <h3 id="content19"></h3>
+					<h6 id="Id19"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			</tr>
+			<tr>
+			<th><div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('20')">
+		       <div id="thmbDiv20"></div>
+		        <div class="info">
+		            <h3 id="content20"></h3>
+					<h6 id="Id20"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			
+				<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('21')">
+		       <div id="thmbDiv21"></div>
+		        <div class="info">
+		            <h3 id="content21"></h3>
+					<h6 id="Id21"></h6>
+		        </div>
+				</a>
+		    </div></th></th>
+				<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('22')">
+		       <div id="thmbDiv22"></div>
+		        <div class="info">
+		            <h3 id="content22"></h3>
+					<h6 id="Id22"></h6>
+		        </div>
+				</a>
+		    </div></th></th>
+				<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('23')">
+		       <div id="thmbDiv23"></div>
+		        <div class="info">
+		            <h3 id="content23"></h3>
+					<h6 id="Id23"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			</tr>
+			<tr>
+				<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('24')">
+		       <div id="thmbDiv24"></div>
+		        <div class="info">
+		            <h3 id="content24"></h3>
+					<h6 id="Id24"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			<th><div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('25')">
+		       <div id="thmbDiv25"></div>
+		        <div class="info">
+		            <h3 id="content25"></h3>
+					<h6 id="Id25"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('26')">
+		       <div id="thmbDiv26"></div>
+		        <div class="info">
+		            <h3 id="content26"></h3>
+					<h6 id="Id26"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('27')">
+		       <div id="thmbDiv27"></div>
+		        <div class="info">
+		            <h3 id="content27"></h3>
+					<h6 id="Id27"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			</tr>
+			<tr>
+				<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('28')">
+		       <div id="thmbDiv28"></div>
+		        <div class="info">
+		            <h3 id="content28"></h3>
+					<h6 id="Id28"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			<th><div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('29')">
+		       <div id="thmbDiv29"></div>
+		        <div class="info">
+		            <h3 id="content29"></h3>
+					<h6 id="Id29"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('30')">
+		       <div id="thmbDiv30"></div>
+		        <div class="info">
+		            <h3 id="content30"></h3>
+					<h6 id="Id30"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			<th>	  <div class="brick">
+				  <a href="recipe.html" onclick="recipeSearch('31')">
+		       <div id="thmbDiv31"></div>
+		        <div class="info">
+		            <h3 id="content31"></h3>
+					<h6 id="Id31"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			</tr>
+		</div>
+<p id="test"></p>
+</body>
+</html>

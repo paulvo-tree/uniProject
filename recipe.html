@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fridge Fingers</title>
+
+<link rel="stylesheet" href="styleSheet/style.css">
+
+<script src="javaScript/jquery.js"></script>
+<script src="javaScript/recipeList.js"></script>
+<body onload="recipeDetail()">
+
+
+</head>
+<body>
+<div class="header">
+	<div class="container">
+		<ul class="pull-left">
+			<li><a href="index.html">Fridge Fingers</a></li>
+		</ul>
+		<ul class="pull-right">
+			<li><a href="main.html">Browse</a></li>
+			<li><a href="help.html">Help</a></li>
+
+	</div>
+</div>
+<style>
+
+</style> 	
+<div class="mainRecipe" id="imgRecip" onclick="linkToPage()"> </div>
+	<div class="foodRecipe">
+		<div class="food">
+			<h1 id="title"></h1>
+			<h3 id="descript"></h5>	
+		</div>
+		<div class="ingredient">
+			<h2>Ingredients</h2>
+			<h4 id="ingr"></h4>
+		</div>
+		<div class="details">
+			<h2>Recipe type</h2>
+			<h4 id="deta"></h4>
+		</div>
+		<br>
+		<br>
+		</div>
+		<div class="make">
+			<h2>The recipe</h2>
+			<p id="toMake"></p>
+		</div>
+
+<br>
+<br>
+<br>
+<br>
+<div id="freewall" class="free-wall">
+	<h2>Similar Recipes</h2>
+		<table width="250">
+			<tr>
+				<th>
+				 <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('0')">
+				<div id="thmbDiv0"></div>
+					<div class="info">
+		            <h3 id="content0"></h3>
+					<h6 id="Id0"></h6>
+		        </div>
+				</a>
+				</div>
+			</th>
+				<th> <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('1')">
+		        <div id="thmbDiv1"></div>
+		        <div class="info">
+		            <h3 id="content1"></h3>
+					<h6 id="Id1"></h6>
+		        </div>
+				</a>
+		    </div></th>
+				<th><div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('2')">
+		       <div id="thmbDiv2"></div>
+		         <div class="info">
+		            <h3 id="content2"></h3>
+					<h6 id="Id2"></h6>
+		        </div>
+				</a>
+		    </div></th>
+				<th> <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('3')">
+					<div id="thmbDiv3"></div>
+					<div class="info">
+		            <h3 id="content3"></h3>
+					<h6 id="Id3"></h6>
+		        </div>
+				</a>
+		    </div></th>
+				<th> <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('4')">
+					<div id="thmbDiv4"></div>
+					<div class="info">
+		            <h3 id="content4"></h3>
+					<h6 id="Id4"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			</tr>
+			<tr>
+				<th> <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('5')">
+		        <div id="thmbDiv5"></div>
+		        <div class="info">
+		            <h3 id="content5"></h3>
+					<h6 id="Id5"></h6>
+		        </div>
+				</a>
+		    </div></th>
+				<th><div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('6')">
+		       <div id="thmbDiv6"></div>
+		        <div class="info">
+		            <h3 id="content6"></h3>
+					<h6 id="Id6"></h6>
+		        </div>
+				</a>
+		    </div></th>
+				<th> <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('7')">
+		       <div id="thmbDiv7"></div>
+		        <div class="info">
+		            <h3 id="content7"></h3>
+					<h6 id="Id7"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			<th> <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('8')">
+		       <div id="thmbDiv8"></div>
+		        <div class="info">
+		            <h3 id="content8"></h3>
+					<h6 id="Id8"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			<th> <div class="brick">
+				<a href="recipe.html" onclick="recipeSearch('9')">
+		       <div id="thmbDiv9"></div>
+		        <div class="info">
+		            <h3 id="content9"></h3>
+					<h6 id="Id9"></h6>
+		        </div>
+				</a>
+		    </div></th>
+			</tr>
+</div>
+		</div>
+</div>
+</body>
+</html>

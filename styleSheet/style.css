@@ -1,0 +1,217 @@
+.header {
+	padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.header .pull-left{
+	float: left;
+	margin-left: 10px;
+}
+
+.header .pull-left a{
+	font-size:20px;
+}
+
+.header .pull-right{
+	float: right;
+	margin-right: 40px;
+}
+
+.nav ul{
+    padding-left: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.header a{
+	color: #585858;
+	font-size: 11px;
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;
+	padding: 14px 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.header li {
+	display: inline;
+}
+
+.mainPage {
+	clear:both;
+	background-image:url('http://static.tumblr.com/wj5otsw/VKMl8elur/food_collage.jpg');
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px;
+    margin-bottom: 30px;
+}
+
+.mainPage .container {
+	text-align:center;	
+	font-family: 'Shift', sans-serif;
+}
+
+.mainPage h1 {
+		color: black;
+	font-size: 50px;
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;
+	padding: 14px 10px;
+	text-transform: uppercase;
+	border:2px solid #207cca;
+	background-color:#fafafa;
+}
+
+.form{
+	clear:both;
+}
+.main {
+	text-align:center;
+}
+
+.mainPage button{
+	  position:relative;
+      padding:6px 15px;
+      left:-8px;
+      border:2px solid #207cca;
+      background-color:#207cca;
+      color:#fafafa;	
+}
+
+.mainPage button:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+}
+
+.register {
+	clear:both;
+	text-align:center;
+}
+
+.mainResult {
+	clear:both;
+}
+
+.mainResult .searchQry{
+	float:left;
+
+}
+
+.brick {
+	float:right;
+	background: white;
+
+	border-radius: 3px;
+	color: #333;
+	border: none;
+	
+	    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 10px;
+	
+
+}
+
+.brick a{
+		color: #585858;
+	font-size: 13px;
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.mainRecipe {
+	clear:both;
+	text-align:center;
+}
+
+.food{
+	text-align:center;
+}
+
+.ingredient{
+	float:left;
+}
+
+.details{
+	float:right;
+}
+.make{
+	clear:both;
+}
+
+.brick h6 {
+opacity: 0;
+}
+
+.foodRecipe {
+	background-color: #f7f7f7;
+}
+.foodRecipe h2 {
+	color: orange;
+	font-size: 20px;
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;
+	padding: 14px 10px;
+}
+
+.foodRecipe h1 {
+	color: #585858;
+	font-size: 30px;
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;
+	padding: 14px 10px;
+}
+
+.foodRecipe h3{
+	color: #585858;
+	font-family: 'Shift', sans-serif;
+}
+
+.make {
+   background-color: #efefef;
+   border-top: 1px solid #dbdbdb;
+   border-bottom: 1px solid #dbdbdb;
+}
+
+.make h2{
+		color: orange;
+	font-size: 20px;
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;
+	padding: 14px 10px;
+}
+
+.searchQry {
+   background-color: #efefef;
+   border-right: 1px solid #dbdbdb;
+   	padding: 14px 35px;
+}
+
+
+.foodguide h2 {
+    margin-top: 37px;
+}
+.foodguide .thumbnail {
+    margin: none;
+    padding: none;
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.foodguide .thumbnail {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.foodguide .thumbnail h4 {
+    font-family: Shift, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 29px;
+    color: #fff;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+}
